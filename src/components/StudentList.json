@@ -1,0 +1,170 @@
+[
+  {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "edad": 20,
+    "dni": "12345678",
+    "telefono": "123-456-7890",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "María",
+    "apellido": "González",
+    "edad": 22,
+    "dni": "87654321",
+    "telefono": "987-654-3210",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Carlos",
+    "apellido": "Rodríguez",
+    "edad": 19,
+    "dni": "11223344",
+    "telefono": "111-222-3333",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "Martínez",
+    "edad": 21,
+    "dni": "33445566",
+    "telefono": "222-333-4444",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Luis",
+    "apellido": "Fernández",
+    "edad": 23,
+    "dni": "55667788",
+    "telefono": "333-444-5555",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Sofía",
+    "apellido": "Torres",
+    "edad": 20,
+    "dni": "77889900",
+    "telefono": "444-555-6666",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Diego",
+    "apellido": "Morales",
+    "edad": 22,
+    "dni": "99001122",
+    "telefono": "555-666-7777",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Lucía",
+    "apellido": "Gómez",
+    "edad": 21,
+    "dni": "11224433",
+    "telefono": "666-777-8888",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Miguel",
+    "apellido": "Vargas",
+    "edad": 24,
+    "dni": "33446655",
+    "telefono": "777-888-9999",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Elena",
+    "apellido": "Díaz",
+    "edad": 19,
+    "dni": "55668877",
+    "telefono": "888-999-0000",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Jiménez",
+    "edad": 20,
+    "dni": "77880099",
+    "telefono": "999-000-1111",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Carmen",
+    "apellido": "López",
+    "edad": 23,
+    "dni": "99002211",
+    "telefono": "000-111-2222",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Tomás",
+    "apellido": "Suárez",
+    "edad": 21,
+    "dni": "11225544",
+    "telefono": "111-222-3333",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Laura",
+    "apellido": "Méndez",
+    "edad": 22,
+    "dni": "33447766",
+    "telefono": "222-333-4444",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Andrés",
+    "apellido": "Herrera",
+    "edad": 20,
+    "dni": "55669988",
+    "telefono": "333-444-5555",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Valeria",
+    "apellido": "Ramos",
+    "edad": 24,
+    "dni": "77881100",
+    "telefono": "444-555-6666",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Jorge",
+    "apellido": "Paredes",
+    "edad": 21,
+    "dni": "99003322",
+    "telefono": "555-666-7777",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Isabel",
+    "apellido": "Navarro",
+    "edad": 23,
+    "dni": "11226633",
+    "telefono": "666-777-8888",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Oscar",
+    "apellido": "Campos",
+    "edad": 22,
+    "dni": "33448855",
+    "telefono": "777-888-9999",
+    "sexo": "Masculino"
+  },
+  {
+    "nombre": "Nathali",
+    "apellido": "Borda",
+    "edad": 19,
+    "dni": "55661177",
+    "telefono": "888-999-0000",
+    "sexo": "Femenino"
+  },
+  {
+    "nombre": "Felipe",
+    "apellido": "Ruiz",
+    "edad": 22,
+    "dni": "77882200",
+    "telefono": "999-000-1111",
+    "sexo": "Masculino"
+  }
+]

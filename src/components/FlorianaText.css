@@ -1,0 +1,44 @@
+/* Contenedor principal */
+.floriana-container {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  background-image: url('WhatsAppImage.js'); /* Imagen de fondo */
+  background-size: cover; /* La imagen cubre todo el contenedor */
+  background-position: 100% 30%;
+  background-repeat: no-repeat; /* No repite la imagen */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  color: white; /* Establece el color del texto para que contraste con el fondo */
+}
+
+/* Estilo para el encabezado */
+.floriana-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: #6a1b9a; /* Color morado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el párrafo */
+.floriana-paragraph {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 0;
+  padding: 0 10px;
+}
+
+/* Estilo de la imagen (si es que la mantienes visible) */
+.floriana-container img {
+  width: 100px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción */
+  margin-top: 20px;
+}
