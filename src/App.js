@@ -1,50 +1,45 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Products from "./pages/Products";
-import Alumnos from "./pages/Alumnos";
-import Background from "./components/Background"; // Componente que maneja el fondo de la página
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Login from './pages/Login';
+import NoNavbarPage from './pages/NoNavbarPage'; // Importar la nueva página
+import WhatsAppImage from './components/WhatsAppImage'; // Importar el componente WhatsAppImage
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 const App = () => {
-  // Estado para manejar el modo oscuro
-  const [darkMode, setDarkMode] = useState(false); // Estado para controlar el modo oscuro
+  const [darkMode, setDarkMode] = useState(false);
 
-  // Función para alternar entre modo oscuro y modo claro
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
-  // Estilo condicional dependiendo del modo
-  const appStyles = {
-    backgroundColor: darkMode ? "#121212" : "", // Fondo oscuro o claro
-    color: darkMode ? "#ffffff" : "#000000", // Texto blanco para el modo oscuro
-    transition: "all 0.3s ease", // Transición suave entre los modos
-    minHeight: "100vh",
-  };
+  const appClasses = darkMode ? "bg-dark text-white" : "bg-light text-dark";
 
   return (
     <Router>
-      {/* Componente que maneja el fondo de la página */}
-      <Background 
-        backgroundImage=""
-        // backgroundImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGYRjTq0mBz7aFF3uvE86ss5JbA16WSHiWw&s"  
-      />
-
-      {/* Navbar pasando la función toggleDarkMode */}
-      <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-
-      {/* Contenido de la aplicación */}
-      <div className="container mt-5" style={appStyles}>
+      <div className={`min-vh-100 ${appClasses}`}>
+        {/* Renderizamos el Navbar solo si la ruta no es "/no-navbar" */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/productos" element={<Products />} />
-          <Route path="/alumnos" element={<Alumnos />} />
+          {/* Si la ruta no es '/no-navbar', mostramos el Navbar */}
+          <Route path="/" element={<><Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /><Home /></>} />
+          <Route path="/about" element={<><Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /><About /></>} />
+          <Route path="/services" element={<><Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /><Services /></>} />
+          <Route path="/login" element={<><Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /><Login /></>} />
+          {/* Página sin Navbar */}
+          <Route path="/no-navbar" element={<NoNavbarPage />} />
         </Routes>
+
+        {/* El componente WhatsAppImage se renderiza en todas las páginas */}
+        <WhatsAppImage
+          size="90px"
+          verticalPosition="bottom"
+          horizontalPosition="right"
+          phoneNumber="9876543210"
+        />
       </div>
     </Router>
   );
